@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pt.verified-psychic-reviews.net/sitemap.xml
