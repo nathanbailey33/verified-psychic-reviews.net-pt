@@ -24,7 +24,7 @@
     var question = field.value.replace(/\s+/g, ' ').trim().slice(0, 280);
     if (question.length < 5) { field.focus(); field.setAttribute('aria-invalid', 'true'); return; }
     field.removeAttribute('aria-invalid');
-    try { sessionStorage.setItem('vpv-tarot-question', question); } catch (error) { /* Sem armazenamento, a leitura continua. */ }
+    try { sessionStorage.setItem('vpv-tarot-question', question); } catch (error) { /* Читання працює і без сховища. */ }
     window.location.assign(path(question));
   });
 }());
